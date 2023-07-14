@@ -1,35 +1,48 @@
     /* General */
     nav.headermd {
-        margin-top: -100px !important;
+        margin-top: -88px !important;
     }
 
     body {
-        margin-top: 100px !important;
+        margin-top: 88px !important;
     }
 
     body {
-        font-family: 'Barlow', sans-serif !important;
+        /* font-family: 'Merriweather', serif !important; */
+        font-family: 'Lora', serif !important;
         position: relative;
         overflow-x: hidden !important;
         margin: 0px;
     }
 
     /* new-header */
-    nav.headermd {
-        background: black;
-        position: fixed;
-        Z-INDEX: 99999;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        margin: auto;
-        justify-content: space-around;
-        padding: 0px 90px;
-    }
+        nav.headermd {
+            background: #C0A9B0;
+            position: fixed;
+            Z-INDEX: 99999;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            justify-content: space-around;
+            padding: 28px 90px;
+        }
 
     .iconmage1 img {
         width: 100px;
         max-width: 100%;
+    }
+
+    .iconmage1 a {
+        color: black;
+        font-family: 'Merriweather', serif !important;
+        text-decoration: unset;
+        font-weight: 900;
+        font-size: 22px;
+    }
+
+    .iconmage1 a:hover {
+        color: black;
     }
 
     .socialmedia1 li {
@@ -84,15 +97,28 @@
     }
 
     /* footer */
-    .backgroundfooter {
-        padding: 45px 0px;
-    }
+        .backgroundfooter {
+            padding: 45px 0px;
+            background: #EED4D2;
+        }
 
     .bgfooter {
         display: flex;
         flex-direction: column;
         gap: 21px;
         align-items: center;
+    }
+
+    .iconfooter a {
+        color: black;
+        text-decoration: unset;
+        font-weight: 900;
+        font-size: 22px;
+    }
+
+    .iconfooter a:hover {
+        color: black;
+        text-decoration: unset;
     }
 
     .iconfooter img {
@@ -120,7 +146,7 @@
         }
 
         nav.headermd {
-            padding: 0px 20px;
+            padding: 21px 20px;
         }
 
         .bgbox2 {
@@ -165,7 +191,7 @@
             display: flex;
             width: 50%;
             right: 0;
-            background-color: black;
+            background-color: #c0a9b0;
             height: 95vh;
             transform: translateX(100%);
             transition: transform 0.5s ease-in;
