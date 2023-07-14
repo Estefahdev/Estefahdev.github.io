@@ -116,7 +116,7 @@
                     </div>
                 </div>
                 <div class='img1'>
-                    <img src="" alt="">
+                    <img src="images/" alt="">
                 </div>
             </div>
         </div>
