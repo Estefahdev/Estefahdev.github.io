@@ -101,10 +101,10 @@
     }
 
     /* footer */
-        .backgroundfooter {
-            padding: 45px 0px;
-            background: #EED4D2;
-        }
+    .backgroundfooter {
+        padding: 45px 0px;
+        background: #c0a9b0;
+    }
 
     .bgfooter {
         display: flex;
