@@ -1,10 +1,10 @@
     /* General */
     nav.headermd {
-        margin-top: -88px !important;
+        margin-top: -75px !important;
     }
 
     body {
-        margin-top: 88px !important;
+        margin-top: 75px !important;
     }
 
     body {
@@ -15,18 +15,22 @@
     }
 
     /* new-header */
-        nav.headermd {
-            background: #C0A9B0;
-            position: fixed;
-            Z-INDEX: 99999;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            margin: auto;
-            justify-content: space-around;
-            padding: 28px 90px;
-        }
-
+    nav.headermd {
+        background: #C0A9B0;
+        position: fixed;
+        Z-INDEX: 99999;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        justify-content: space-around;
+        padding: 28px 90px;
+    }
+    .line1 {
+        height: 100#;
+        width: 2px;
+        background: black;
+    }
     .iconmage1 img {
         width: 100px;
         max-width: 100%;

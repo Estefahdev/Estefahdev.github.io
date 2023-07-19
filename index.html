@@ -18,6 +18,14 @@
         position: relative;
     }
 
+    img.mobile1 {
+        display: none;
+    }
+
+    img.noback1 {
+        display: block;
+    }
+
     img.noback1 {
         width: 840px;
         position: absolute;
@@ -179,6 +187,10 @@
         padding-top: 30px;
     }
 
+    .bgbox2.nocenter2 {
+        justify-content: start;
+    }
+
     .meetingbox iframe {
         height: 680px !important;
     }
@@ -194,10 +206,10 @@
     }
 
 
-    /* secion3 */
+    /* section3 */
     .background3 {
         padding: 70px 0px;
-        background: #e1dce1;
+        background: #F6E8EC;
     }
 
     .title3 h2 {
@@ -290,6 +302,186 @@
     .btn6 a:hover {
         color: white;
     }
+
+    /* section4 */
+    .background4 {
+        padding: 100px 0px;
+        background: #0F1216;
+    }
+
+    .bgbox4 {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .txt4 {
+        width: 750px;
+        max-width: 100%;
+        flex-direction: column;
+        color: #e1dce1;
+        display: flex;
+        gap: 15px;
+    }
+
+    .txt4 h2 {
+        font-size: 65px;
+        font-weight: 900;
+    }
+
+    .img4 img {
+        width: 334px;
+        max-width: 100%;
+        border-radius: 50%;
+        border: solid 5px #e1dce1;
+    }
+
+    .line4 {
+        width: 195px;
+        background: #e1dce1;
+        max-width: 100%;
+        height: 5px;
+    }
+
+    .stacktec4 i {
+        font-size: 30px;
+    }
+
+    .stacktec4 {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stacktec4 span {
+        font-weight: bold;
+    }
+
+    i.fa-brands.fa-html5 {
+        color: #e34c26;
+    }
+
+    i.fa-brands.fa-css3-alt {
+        color: #264de4;
+    }
+
+    i.fa-brands.fa-js {
+        color: #f0db4f;
+        background: #323330;
+    }
+
+    i.fa-brands.fa-bootstrap {
+        color: #563d7c;
+    }
+
+    i.fa-brands.fa-php {
+        color: #484C89;
+    }
+
+    i.fa-brands.fa-python {
+        color: #306998;
+    }
+
+    .circle {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+
+    .img4 {
+        -webkit-animation: morph 8s ease-in-out infinite;
+        animation: morph 8s ease-in-out infinite;
+        background-image: url(images/animation.PNG);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 3px solid #e1dce1;
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        height: 350px;
+        position: relative;
+        transition: all 1s ease-in-out;
+        width: 350px;
+    }
+
+    @keyframes morph {
+        0% {
+            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        }
+
+        50% {
+            border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+        }
+
+        100% {
+            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        }
+    }
+
+
+    /* responsive */
+
+    @media only screen and (max-width: 1435px) {
+        .background1 {
+            padding: 50px 0px;
+            background: linear-gradient(180deg, #1B1E23 45%, #E1DCE1 45%);
+        }
+
+        .bgbox1 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        img.noback1 {
+            right: -118px;
+            margin: unset;
+            left: unset;
+        }
+
+        .textabout1 {
+            gap: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .bgbox4 {
+            justify-content: center;
+        }
+
+        img.mobile1 {
+            display: block;
+        }
+
+        img.noback1 {
+            display: none;
+        }
+
+        .background1 {
+            padding: 50px 0px 0px;
+            background: linear-gradient(180deg, #1B1E23 32%, #E1DCE1 32%);
+        }
+
+        img.mobile1 {
+            width: 535px;
+            max-width: 100%;
+            margin: auto;
+        }
+    }
+
+    @media only screen and (max-width: 540px) {
+        .background1 {
+            background: linear-gradient(180deg, #1B1E23 33%, #E1DCE1 33%);
+        }
+    }
+
+    @media only screen and (max-width: 490px) {
+        .background1 {
+            background: linear-gradient(180deg, #1B1E23 41%, #E1DCE1 33%);
+        }
+    }
 </style>
 
 <head>
@@ -357,16 +549,13 @@
         <div class='header-links'>
             <ul class="alinks">
                 <li>
-                    <a href="">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="">About</a>
+                    <a href="#aboutsection">About</a>
                 </li>
                 <li>
                     <a href="#projectsection">Projects</a>
-                </li>
-                <li>
-                    <a href="">Services</a>
                 </li>
                 <li>
                     <a href="#contactsection">Contact</a>
@@ -413,7 +602,7 @@
 </head>
 
 <body>
-    <div class='background1'>
+    <div class='background1' id="home">
         <div class='container'>
             <div class='bgbox1'>
                 <div class='txt1'>
@@ -459,6 +648,7 @@
             </div>
         </div>
         <img class="noback1" src="images/menoback.png" alt="">
+        <img class="mobile1" src="images/menobackmobile.png" alt="">
     </div>
     <script>
         var typed = new Typed('#element', {
@@ -466,6 +656,30 @@
             typeSpeed: 50,
         });
     </script>
+    <div class='background4' id="aboutsection">
+        <div class='container'>
+            <div class='bgbox4'>
+                <div class='txt4'>
+                    <div class="line4"></div>
+                    <h2>About Me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero at doloremque perferendis, rem mollitia consectetur eveniet error! Nesciunt praesentium error, distinctio enim dolores placeat illum molestias inventore commodi quo tempora.</p>
+                    <div class='stacktec4'>
+                        <span>Tech Stack |</span>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <!-- <i class="fa-brands fa-react"></i>  -->
+                        <i class="fa-brands fa-python"></i>
+                        <i class="fa-brands fa-php"></i>
+                    </div>
+                </div>
+                <div class='img4'>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <div class='background3' id="projectsection">
         <div class='container'>
             <div class='title3'>
@@ -532,7 +746,7 @@
                 <div class='line2'></div>
                 <h2>Let's Work Together</h2>
             </div>
-            <div class='bgbox2'>
+            <div class='bgbox2 nocenter2'>
                 <div class='box2'>
                     <div class='txt2'>
                         <h3>Get in touch with me</h3>
