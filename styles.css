@@ -8,8 +8,7 @@
     }
 
     body {
-        /* font-family: 'Merriweather', serif !important; */
-        font-family: 'Lora', serif !important;
+        font-family: 'Space Grotesk', sans-serif !important;
         position: relative;
         overflow-x: hidden !important;
         margin: 0px;
@@ -58,8 +57,9 @@
     }
 
     ul.alinks a {
-        color: white;
+        color: #1b1e23;
         text-decoration: unset;
+        FONT-WEIGHT: BOLD;
         font-size: 18px;
     }
 
@@ -74,8 +74,8 @@
     }
 
     .socialmedia1 i {
-        color: white;
-        font-size: 29px;
+        color: #1b1e23;
+        font-size: 25px;
     }
 
     .iconmage1 {
