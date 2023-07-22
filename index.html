@@ -295,6 +295,16 @@
         border-radius: 50px;
     }
 
+    .txt6 p a {
+        color: #c0a9b0;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .txt6 p a:hover {
+        text-decoration: underline;
+    }
+
     .btn6 a {
         font-weight: bold;
         color: #1b1e23;
@@ -508,6 +518,10 @@
 
     .hidden {
         display: none;
+    }
+
+    .visible {
+        display: inline;
     }
 </style>
 
@@ -759,10 +773,10 @@
                                 the driving school. The main objective was to showcase their services, provide essential
                                 information for potential
                                 students, and facilitate the enrollment process. By implementing a design that was
-                                completely responsive and functional...
-
-                                <span id="extraText" class="hidden">
-                                    the website ensured a seamless experience for visitors across all devices, be it
+                                completely responsive and<span id="dots" class="visible">...</span>
+                                <span id="extraText" style="display: none;">
+                                    functional, the website ensured a seamless experience for visitors across all
+                                    devices, be it
                                     desktops, tablets, or smartphones.
                                     Interactive contact forms were strategically placed throughout the website, making
                                     it
@@ -780,7 +794,7 @@
                             <div class='boxx6'>
                                 <div class='btn6'>
                                     <a href="">
-                                        <a href="https://escuelademanejofyk.com/">See More <i
+                                        <a href="https://escuelademanejofyk.com/">Live Site <i
                                                 class="fa fa-external-link" aria-hidden="true"></i></a>
                                     </a>
                                 </div>
@@ -830,12 +844,15 @@
         function toggleReadMore() {
             const extraText = document.getElementById('extraText');
             const readMoreLink = document.getElementById('readMoreLink');
+            const dots = document.getElementById('dots');
 
             if (extraText.style.display === 'none') {
                 extraText.style.display = 'inline'; // or 'block' for block-level elements
+                dots.style.display = 'none';
                 readMoreLink.textContent = 'Read Less';
             } else {
                 extraText.style.display = 'none';
+                dots.style.display = 'inline';
                 readMoreLink.textContent = 'Read More';
             }
         }
