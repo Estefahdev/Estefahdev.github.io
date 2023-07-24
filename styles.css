@@ -24,16 +24,17 @@
         align-items: center;
         margin: auto;
         justify-content: space-around;
-        padding: 28px 90px;
+        padding: 10px 90px 10px;
     }
     .line1 {
-        height: 100#;
         width: 2px;
         background: black;
     }
     .iconmage1 img {
-        width: 100px;
+        width: 250px;
         max-width: 100%;
+        object-position: center;
+        object-fit: cover;
     }
 
     .iconmage1 a {
@@ -126,9 +127,11 @@
     }
 
     .iconfooter img {
-        width: 158px;
+        width: 250px;
+        max-width: 100%;
+        object-position: center;
+        object-fit: cover;
     }
-
     .socialmediafooter {
         display: flex;
         gap: 20px;

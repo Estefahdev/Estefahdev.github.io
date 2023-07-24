@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <style>
     /* section-1 */
 
@@ -469,18 +471,24 @@
             flex-direction: column;
             align-items: flex-start;
         }
-
         img.noback1 {
-            right: -118px;
+            right: 35px;
             margin: unset;
             left: unset;
         }
+
 
         .textabout1 {
             gap: 20px;
         }
     }
-
+    @media only screen and (max-width: 1200px) {
+        img.noback1 {
+            right: -118px;
+            margin: unset;
+            left: unset;
+        }
+    }
     @media only screen and (max-width: 900px) {
         .bgbox4 {
             justify-content: center;
@@ -539,13 +547,13 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 
     <!-- favicon -->
-    <link rel="icon" href="" type="image/x-icon">
+    <link rel="icon" href="images/LogoAndFavicon/favcion1.png" type="image/x-icon" >
 
     <!-- meta -->
-    <meta property="og:image" content="">
+    <meta property="og:image" content="images/LogoAndFavicon/logogrey.png">
     <meta name="twitter:card"
         content="Welcome to my portfolio! I'm Estefanía, a passionate and creative website developer based in Costa Rica. With a keen eye for design and expertise in front-end and responsive development, I transform ideas into captivating digital realities. Explore my showcase of visually stunning projects and case studies, from e-commerce stores to custom web solutions. Let's collaborate to bring your vision to life and create an exceptional online presence together!">
-    <meta name="twitter:image" content="">
+    <meta name="twitter:image" content="images/LogoAndFavicon/logogrey.png">
     <meta property="og:title" content="Estefania Henriquez Portfolio">
     <meta property="og:description"
         content="Welcome to my portfolio! I'm Estefanía, a passionate and creative website developer based in Costa Rica. With a keen eye for design and expertise in front-end and responsive development, I transform ideas into captivating digital realities. Explore my showcase of visually stunning projects and case studies, from e-commerce stores to custom web solutions. Let's collaborate to bring your vision to life and create an exceptional online presence together!">
@@ -609,9 +617,10 @@
     <!-- Header -->
     <nav class="headermd">
         <div class="iconmage1">
-            <a href="">
+            <img src="images/LogoAndFavicon/EstefaniaFreelance.png" alt="">
+            <!-- <a href="">
                 PORTFOLIO.
-            </a>
+            </a> -->
         </div>
         <div class='header-links'>
             <ul class="alinks">
@@ -634,8 +643,7 @@
                         aria-hidden="true"></i></a>
                 <a target=”_blank” href="https://www.facebook.com/estefania.henriquez.777/"><i
                         class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                <a target=”_blank” href="https://www.linkedin.com/in/estefania-henriquez-758345202/"><i
-                        class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target=”_blank” href="https://wa.me/message/2MHPKF7IGFKKJ1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
             </div>
         </div>
         <div class='burger'>
@@ -670,7 +678,15 @@
         navSlide();
     </script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D4JL68D3F8"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
+gtag('config', 'G-D4JL68D3F8');
+</script>
 <body>
     <div class='background1' id="home">
         <div class='container'>
@@ -723,6 +739,7 @@
                                     class="fa fa-linkedin" aria-hidden="true"></i></a>
                             <a target=”_blank” href="https://github.com/Estefahdev"><i class="fa fa-github"
                                     aria-hidden="true"></i></a>
+                            <a target=”_blank” href="https://wa.me/message/2MHPKF7IGFKKJ1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -897,6 +914,7 @@
                                 class="fa fa-linkedin" aria-hidden="true"></i></a>
                         <a target=”_blank” href="https://github.com/Estefahdev"><i class="fa fa-github"
                                 aria-hidden="true"></i></a>
+                        <a target=”_blank” href="https://wa.me/message/2MHPKF7IGFKKJ1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class='meetingbox'>
@@ -917,9 +935,7 @@
         <div class='container'>
             <div class='bgfooter'>
                 <div class='iconfooter'>
-                    <a href="">
-                        PORTFOLIO.
-                    </a>
+                    <img src="images/LogoAndFavicon/EstefaniaFreelance.png" alt="">
                 </div>
                 <div class='directionfooter'>
                     <p>Canton Central, San José Costa Rica</p>
@@ -931,10 +947,10 @@
                             class="fa fa-facebook-square" aria-hidden="true"></i></a>
                     <a target=”_blank” href="https://www.linkedin.com/in/estefania-henriquez-758345202/"><i
                             class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    <a target=”_blank” href="https://github.com/Estefahdev"><i class="fa fa-github"
-                            aria-hidden="true"></i></a>
+                    <a target=”_blank” href="https://wa.me/message/2MHPKF7IGFKKJ1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
+</html>
