@@ -849,7 +849,7 @@
             [
                 'titulo' => 'Interactive Calendar System',
                 'descripcion' => 'An embeddable calendar application built for a B2B directory platform, featuring event management, API key authentication, and secure synchronization across multiple client sites.',
-                'tecnologias' => ['React', 'Supabase', 'JavaScript'],
+                'tecnologias' => ['React', 'Supabase', 'JavaScript', 'TypeScript'],
                 'enlace' => '',
                 'imagen' => '/images/calendar.jpg'
             ],
