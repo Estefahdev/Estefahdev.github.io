@@ -837,38 +837,6 @@
                 </div>
             </div>
         </div>
-        <?php 
-        $proyects = [
-            [
-                'titulo' => 'Community Forum Module',
-                'descripcion' => 'A full-stack discussion platform built for a B2B directory product, featuring nested comments, likes/dislikes, rich-text editing, moderation tools, and user engagement notifications.',
-                'tecnologias' => ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
-                'enlace' => '',
-                'imagen' => '/images/forum-module.jpg'
-            ],
-            [
-                'titulo' => 'Interactive Calendar System',
-                'descripcion' => 'An embeddable calendar application built for a B2B directory platform, featuring event management, API key authentication, and secure synchronization across multiple client sites.',
-                'tecnologias' => ['React', 'Supabase', 'JavaScript', 'TypeScript'],
-                'enlace' => '',
-                'imagen' => '/images/calendar.jpg'
-            ],
-            [
-                'titulo' => 'Rae Mackenzie Group — Website Implementation',
-                'descripcion' => 'Implemented the full website design for Rae Mackenzie Group, a multicultural marketing and communications firm serving Fortune 500 companies. Built a responsive, professional web presence reflecting their enterprise brand.',
-                'tecnologias' => ['HTML', 'CSS', 'JavaScript', 'php'],
-                'enlace' => 'https://www.raemackenziegroup.com/',
-                'imagen' => '/images/rae-mackenzie.jpg'
-            ],
-            [
-                'titulo' => 'People of Color Career Fair — Website Implementation',
-                'descripcion' => "Implemented the full website for People of Color Career Fair, Minnesota's premier diversity career event connecting 1,000+ professionals with 50+ employer partners annually. Built a responsive, high-performance platform handling event registration, sponsor showcasing, and community engagement for one of the region's most recognized professional networking events.",
-                'tecnologias' => ['HTML', 'CSS', 'JavaScript', 'php'],
-                'enlace' => 'https://www.peopleofcolorcareerfair.com/',
-                'imagen' => '/images/people-color-career.jpg'
-            ],
-        ];
-        ?>
         <div class='background3' id="projectsection">
             <div class='container'>
                 <div class='title3'>
@@ -876,40 +844,7 @@
                     <h2>Featured Work</h2>
                     <p>A selection of technical explorations and client projects, showcasing architecture, performance, and interaction design.</p>
                 </div>
-                <div class='bx3'>
-                    <?php 
-                    foreach ($proyects as $proyecto) { ?>
-                        <div class="wit6"> 
-                            <img src="<?php echo $proyecto['imagen']; ?>" alt="">
-                            <div class="txt6">
-                                <div class='tags-technologies'>
-                                    <?php foreach ($proyecto['tecnologias'] as $tecnologia) { ?>
-                                        <span class="tag"><?php echo $tecnologia; ?></span>
-                                    <?php } ?>
-                                </div>
-                                <h2><?php echo $proyecto['titulo']; ?></h2>
-                                <div class='description'>
-                                    <p class="project-desc" data-fulltext="<?php echo $proyecto['descripcion']; ?>"><span class="desc-text"></span> <a href="javascript:void(0);" class="read-more-link">Read More</a></p>
-                                </div>
-                                <div class='boxx6'>
-                                    <?php 
-                                    if (!empty($proyecto['enlace'])) { ?>
-                                        <div class='btn6'>
-                                            <a href="<?php echo $proyecto['enlace']; ?>" target="_blank">
-                                                Live Site <i class="fa fa-external-link" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    <?php } else { ?>
-                                        <div class='btn6'>
-                                            Private Project
-                                        </div>
-                                    <?php } ?>
-                                </div>
-                            </div>
-                        </div>
-                    <?php
-                    } ?>
-                </div>
+                <div class='bx3' id="projects-container"></div>
             </div>
         </div>
         <div class='background2' id="contactsection">
@@ -945,6 +880,65 @@
             </div>
         </div>
         <script>
+            const proyects = [
+                {
+                    titulo: 'Community Forum Module',
+                    descripcion: 'A full-stack discussion platform built for a B2B directory product, featuring nested comments, likes/dislikes, rich-text editing, moderation tools, and user engagement notifications.',
+                    tecnologias: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
+                    enlace: '',
+                    imagen: '/images/forum-module.jpg'
+                },
+                {
+                    titulo: 'Interactive Calendar System',
+                    descripcion: 'An embeddable calendar application built for a B2B directory platform, featuring event management, API key authentication, and secure synchronization across multiple client sites.',
+                    tecnologias: ['React', 'Supabase', 'JavaScript', 'TypeScript'],
+                    enlace: '',
+                    imagen: '/images/calendar.jpg'
+                },
+                {
+                    titulo: 'Rae Mackenzie Group — Website Implementation',
+                    descripcion: 'Implemented the full website design for Rae Mackenzie Group, a multicultural marketing and communications firm serving Fortune 500 companies. Built a responsive, professional web presence reflecting their enterprise brand.',
+                    tecnologias: ['HTML', 'CSS', 'JavaScript', 'php'],
+                    enlace: 'https://www.raemackenziegroup.com/',
+                    imagen: '/images/rae-mackenzie.jpg'
+                },
+                {
+                    titulo: 'People of Color Career Fair — Website Implementation',
+                    descripcion: "Implemented the full website for People of Color Career Fair, Minnesota's premier diversity career event connecting 1,000+ professionals with 50+ employer partners annually. Built a responsive, high-performance platform handling event registration, sponsor showcasing, and community engagement for one of the region's most recognized professional networking events.",
+                    tecnologias: ['HTML', 'CSS', 'JavaScript', 'php'],
+                    enlace: 'https://www.peopleofcolorcareerfair.com/',
+                    imagen: '/images/people-color-career.jpg'
+                },
+            ];
+
+            const projectsContainer = document.getElementById('projects-container');
+
+            proyects.forEach((proyecto) => {
+                const wit = document.createElement('div');
+                wit.className = 'wit6';
+
+                const tagsHtml = proyecto.tecnologias.map((tecnologia) => `<span class="tag">${tecnologia}</span>`).join('');
+
+                const linkHtml = proyecto.enlace
+                    ? `<div class='btn6'><a href="${proyecto.enlace}" target="_blank">Live Site <i class="fa fa-external-link" aria-hidden="true"></i></a></div>`
+                    : `<div class='btn6'>Private Project</div>`;
+
+                wit.innerHTML = `
+                    <img src="${proyecto.imagen}" alt="">
+                    <div class="txt6">
+                        <div class='tags-technologies'>${tagsHtml}</div>
+                        <h2>${proyecto.titulo}</h2>
+                        <div class='description'>
+                            <p class="project-desc"><span class="desc-text"></span> <a href="javascript:void(0);" class="read-more-link">Read More</a></p>
+                        </div>
+                        <div class='boxx6'>${linkHtml}</div>
+                    </div>
+                `;
+
+                wit.querySelector('.project-desc').dataset.fulltext = proyecto.descripcion;
+                projectsContainer.appendChild(wit);
+            });
+
             const READ_MORE_CHAR_LIMIT = 120;
 
             document.querySelectorAll('.project-desc').forEach((desc) => {
