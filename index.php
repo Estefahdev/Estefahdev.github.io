@@ -1,0 +1,998 @@
+<script src='https://kit.fontawesome.com/a20679070a.js' crossorigin='anonymous'></script>
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        /* section-1 */ 
+
+            .background1 {
+                padding: 100px 0px 185px;
+                background: linear-gradient(90deg, #1B1E23 50%, #E1DCE1 50%);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .bgbox1 {
+                display: flex;
+                justify-content: space-between;
+                gap: 70px;
+                align-items: center;
+                flex-wrap: wrap;
+                z-index: 2;
+                position: relative;
+            }
+
+            .socialbox i:hover {
+                color: #73646D;
+            }
+
+            img.mobile1 {
+                display: none;
+            }
+
+            img.noback1 {
+                display: block;
+            }
+
+            img.noback1 {
+                width: 840px;
+                position: absolute;
+                bottom: -95px;
+                margin: auto;
+                left: 0px;
+                right: 35px;
+                max-width: 100%;
+            }
+
+            .cv-download a {
+                color: white;
+                font-weight: bold;
+                font-size: 17px;
+            }
+
+            .cv-download {
+                display: flex;
+                gap: 15px;
+            }
+
+
+            .txt1 p {
+                color: #ffffff;
+            }
+
+
+            .btn-1 a {
+                border-radius: 37px;
+                border: solid 3px #eed4d2;
+                padding: 9px 51px;
+                color: #eed4d2;
+                font-weight: bold;
+                font-size: 25px;
+                margin-top: 10px;
+            }
+
+            .textabout1 {
+                width: 390px;
+                max-width: 100%;
+                color: #000000;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+            }
+
+            .line1-1 {
+                width: 100%;
+                height: 1px;
+                background: #464646;
+            }
+
+            .txt1 {
+                flex-direction: column;
+                display: flex;
+                gap: 20px;
+                width: 497px;
+                color: #E1DCE1;
+                max-width: 100%;
+                z-index: 1;
+            }
+
+            .btn-1 a:hover {
+                color: #c0a9b0;
+            }
+
+            .line1-2 {
+                width: 195px;
+                background: white;
+                max-width: 100%;
+                height: 5px;
+            }
+
+            .txt1 h1 {
+                font-size: 46px;
+                font-weight: 900;
+            }
+
+            .bx1-1 {
+                flex-direction: column;
+                display: flex;
+                gap: 10px;
+            }
+
+            .bx1-1 h4 {
+                font-size: 25px;
+            }
+
+            .bx1-1 i {
+                padding-left: 6px;
+            }
+
+            .bx1-1 a {
+                color: #1b1e23;
+                font-size: 18px;
+                text-decoration: unset;
+            }
+
+            .bx1-1 a:hover {
+                text-decoration: underline;
+                color: #1b1e23;
+            }
+
+            .socialmedia {
+                flex-direction: column;
+                gap: 10px;
+                display: flex;
+            }
+
+            .socialbox {
+                display: flex;
+                gap: 20px;
+            }
+
+            .socialbox i {
+                color: #1b1e23;
+                font-size: 30px;
+            }
+
+            .cv-download a:hover {
+                color: #c0a9b0;
+            }
+
+
+
+        /* section2 */
+            .background2 {
+                padding: 100px 0px;
+                background: #3F434A;
+                color: #e1dce1;
+            }
+
+            .title2 h2 {
+                font-size: 65px;
+                font-weight: 900;
+            }
+
+            .line2 {
+                width: 195px;
+                background: white;
+                max-width: 100%;
+                height: 5px;
+            }
+
+            .title2 {
+                flex-direction: column;
+                display: flex;
+                gap: 25px;
+            }
+
+            .txt2 h3 {
+                font-size: 43px;
+            }
+
+            .socialmedia2 {
+                display: flex;
+                gap: 26px;
+            }
+
+            .socialmedia2 i {
+                color: #e1dce1;
+                font-size: 30px;
+            }
+
+            .bgbox2 {
+                display: flex;
+                gap: 30px;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding-top: 30px;
+            }
+
+            .bgbox2.nocenter2 {
+                justify-content: start;
+            }
+
+            .meetingbox iframe {
+                height: 680px !important;
+            }
+
+            .box2 {
+                width: 500px;
+                max-width: 100%;
+            }
+
+            .meetingbox {
+                width: 732px;
+                max-width: 100%;
+            }
+
+
+        /* section3 */
+            .hidden {
+                display: none;
+            }
+
+            .line3 {
+                width: 195px;
+                background: #0F1216;
+                max-width: 100%;
+                height: 5px;
+                margin: auto;
+            }
+
+            .visible {
+                display: inline;
+            }
+
+            .background3 {
+                padding: 70px 0px;
+                background: #F6E8EC;
+            }
+
+            .title3 {
+                text-align: center;
+                padding-bottom: 30px;
+            }
+
+            .title3 h2 {
+                color: #1b1e23;
+                font-size: 65px;
+                font-weight: 900;
+                padding-top: 10px;
+                text-align: center;
+            }
+
+            .bx3 {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 25px;
+                justify-content: center;
+            }
+
+            .wit6 {
+                width: 470px;
+                max-width: 100%;
+                border-radius: 20px;
+                overflow: hidden;
+            }
+
+            .background6 {
+                padding: 70px 0px;
+            }
+
+            .title6 h1 {
+                text-align: center;
+                font-weight: 900;
+                font-size: 43px;
+                width: 700px;
+                padding-bottom: 60px;
+                margin: auto;
+                max-width: 100%;
+            }
+
+            .bgbco6 {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 18px;
+            }
+
+            .txt6 {
+                background-color: #ffffff;
+                padding: 30px 30px;
+                color: #653644;
+                position: relative;
+                min-height: 326px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .slider3 a {
+                text-decoration: unset;
+            }
+
+            .slick-slide {
+                height: unset !important;
+            }
+
+            .txt6 h2 {
+                font-weight: 900;
+                font-size: 21px;
+                margin-bottom: 0px;
+                color: #1c1b1b;
+            }
+
+            span.tag {
+                background: #FDE2E8;
+                padding: 5px 15px;
+                border-radius: 10px;
+            }
+
+            .tags-technologies {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .slick-track {
+                margin: unset !important;
+            }
+
+            .wit6 {
+                width: 470px;
+                max-width: 100%;
+                border-radius: 20px;
+                overflow: hidden;
+            }
+
+            .wit6 img {
+                max-width: 100%;
+                object-fit: cover;
+                width: 100%;
+                height: 240px;
+                filter: brightness(46%);
+            }
+
+            .wit6:hover img {
+                filter: brightness(100%);
+                transition: 1s;
+            }
+
+            .btn6 {
+                background: #eed4d2;
+                width: 150px;
+                text-align: center;
+                padding: 10px 0px;
+                border-radius: 50px;
+            }
+
+            .txt6 p a {
+                color: #c0a9b0;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .txt6 p a:hover {
+                text-decoration: underline;
+            }
+
+            .btn6 a {
+                font-weight: bold;
+                color: #7e535e;
+            }
+
+            .btn6:hover {
+                background: #c0a9b0;
+            }
+
+            .btn6 a:hover {
+                color: white;
+            }
+
+        /* section4 */
+            .background4 {
+                padding: 100px 0px;
+                background: #0F1216;
+            }
+
+            .bgbox4 {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .txt4 {
+                width: 750px;
+                max-width: 100%;
+                flex-direction: column;
+                align-items: center;
+                color: #e1dce1;
+                display: flex;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .txt4 h2 {
+                font-size: 65px;
+                font-weight: 900;
+            }
+
+            .img4 img {
+                width: 334px;
+                max-width: 100%;
+                border-radius: 50%;
+                border: solid 5px #e1dce1;
+            }
+
+            .line4 {
+                width: 195px;
+                background: #e1dce1;
+                max-width: 100%;
+                height: 5px;
+            }
+
+            .stacktec4 i {
+                font-size: 30px;
+            }
+
+            .stacktec4 {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                flex-wrap: wrap;
+
+            }
+
+            .stacktec4 span {
+                font-weight: bold;
+            }
+
+            i.fa-brands.fa-html5 {
+                color: #e34c26;
+            }
+
+            i.fa-brands.fa-css3-alt {
+                color: #264de4;
+            }
+
+            i.fa-brands.fa-js {
+                color: #f0db4f;
+                background: #323330;
+            }
+
+            i.fa-brands.fa-bootstrap {
+                color: #563d7c;
+            }
+
+            i.fa-brands.fa-php {
+                color: #484C89;
+            }
+
+            i.fa-brands.fa-python {
+                color: #306998;
+            }
+
+            .circle {
+                width: 350px;
+                height: 350px;
+                border-radius: 50%;
+                border: 1px solid white;
+            }
+
+            .img4 {
+                -webkit-animation: morph 8s ease-in-out infinite;
+                animation: morph 8s ease-in-out infinite;
+                background-image: url(images/animation.PNG);
+                background-position: 50%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border: 3px solid #e1dce1;
+                border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                height: 350px;
+                position: relative;
+                transition: all 1s ease-in-out;
+                width: 350px;
+            }
+
+            @keyframes morph {
+                0% {
+                    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                }
+
+                50% {
+                    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+                }
+
+                100% {
+                    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                }
+            }
+
+
+        /* responsive */
+
+            @media only screen and (max-width: 1400px) {
+                .background1 {
+                    padding: 50px 0px;
+                    background: linear-gradient(180deg, #1B1E23 45%, #E1DCE1 45%);
+                }
+
+                .bgbox1 {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                img.noback1 {
+                    right: 35px;
+                    margin: unset;
+                    left: unset;
+                }
+
+
+                .textabout1 {
+                    gap: 20px;
+                }
+            }
+
+            @media only screen and (max-width: 1200px) {
+                img.noback1 {
+                    right: -118px;
+                    margin: unset;
+                    left: unset;
+                }
+
+                .txt1 h1 {
+                    line-height: 60px;
+                }
+            }
+
+            @media only screen and (max-width: 900px) {
+                .bgbox4 {
+                    justify-content: center;
+                }
+
+                .stacktec4 {
+                    justify-content: start;
+                    gap: 16px;
+                }
+
+                img.mobile1 {
+                    display: block;
+                }
+
+                img.noback1 {
+                    display: none;
+                }
+
+                .background1 {
+                    padding: 50px 0px 0px;
+                    background: linear-gradient(180deg, #1B1E23 32%, #E1DCE1 32%);
+                }
+
+                img.mobile1 {
+                    width: 535px;
+                    max-width: 100%;
+                    margin: auto;
+                }
+            }
+
+            @media only screen and (max-width: 540px) {
+                .background1 {
+                    background: linear-gradient(180deg, #1B1E23 33%, #E1DCE1 33%);
+                }
+            }
+
+            @media only screen and (max-width: 490px) {
+                .background1 {
+                    padding: 50px 0px 50px;
+                    background: linear-gradient(180deg, #1B1E23 49%, #E1DCE1 33%);
+                }
+                .txt1 {
+                    min-height: 550px;
+                    justify-content: space-between;
+                }
+                .txt1 span {
+                    font-size: 50px;
+                    font-weight: 900;
+                }
+
+                img.mobile1 {
+                    display: none;
+                }
+            }
+    </style>
+    <head>
+        <!-- css header y footer-->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <!-- favicon -->
+        <link rel="icon" href="images/LogoAndFavicon/favcion1.png" type="image/x-icon">
+
+        <!-- meta -->
+        <meta property="og:image" content="images/LogoAndFavicon/logogrey.png">
+        <meta name="twitter:card"
+            content="Welcome to my portfolio! I'm Estefanía, a passionate and creative website developer based in Costa Rica. With a keen eye for design and expertise in front-end and responsive development, I transform ideas into captivating digital realities. Explore my showcase of visually stunning projects and case studies, from e-commerce stores to custom web solutions. Let's collaborate to bring your vision to life and create an exceptional online presence together!">
+        <meta name="twitter:image" content="images/LogoAndFavicon/logogrey.png">
+        <meta property="og:title" content="Estefania Henriquez Portfolio">
+        <meta property="og:description"
+            content="Welcome to my portfolio! I'm Estefanía, a passionate and creative website developer based in Costa Rica. With a keen eye for design and expertise in front-end and responsive development, I transform ideas into captivating digital realities. Explore my showcase of visually stunning projects and case studies, from e-commerce stores to custom web solutions. Let's collaborate to bring your vision to life and create an exceptional online presence together!">
+        <meta property="og:url" content="https://estefahdev.github.io/">
+
+        <!-- slick -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+            integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+            integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- font-family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+
+
+        <!-- javascript -->
+        <script src="javascriptcode.js"></script>
+
+        <!-- type text -->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+        <!-- font-awesome -->
+
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- HTML -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estefania Henriquez Developer</title>
+
+        <!-- Header -->
+        <nav class="headermd">
+            <div class="iconmage1">
+                <img src="images/Logo_Freelance.png" alt="">
+                <!-- <a href="">
+                    PORTFOLIO.
+                </a> -->
+            </div>
+            <div class='header-links'>
+                <ul class="alinks">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#aboutsection">About</a>
+                    </li>
+                    <li>
+                        <a href="#projectsection">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contactsection">Contact</a>
+                    </li>
+                </ul>
+                <div class='line1'></div>
+                <div class='socialmedia1'>
+                    <a target=”_blank” href="https://www.instagram.com/estefa.ha/"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a>
+                            <a target=”_blank” href="https://www.linkedin.com/in/estefania-henriquez-758345202/"><i
+                                        class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    
+                </div>
+            </div>
+            <div class='burger'>
+                <div class='line1'></div>
+                <div class='line2'></div>
+                <div class='line3'></div>
+            </div>
+        </nav>
+        <script>
+            const navSlide = () => {
+                const burger = document.querySelector('.burger');
+                const nav = document.querySelector('.header-links');
+                const navLinks = document.querySelectorAll('.header-links li');
+
+                burger.addEventListener('click', () => {
+                    // toggle-header
+                    nav.classList.toggle('header-active');
+
+                    // link-animation
+                    navLinks.forEach((link, index) => {
+                        if (link.style.animation) {
+                            link.style.animation = ''
+                        } else {
+                            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                        }
+                    });
+                    // burger-animation
+                    burger.classList.toggle('toggle');
+
+                });
+            }
+            navSlide();
+        </script>
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D4JL68D3F8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D4JL68D3F8');
+    </script>
+    <body>
+        <div class='background1' id="home">
+            <div class='container'>
+                <div class='bgbox1'>
+                    <div class='txt1'>
+                        <div class='line1-2'></div>
+                        <div class=''>
+                            <h1>
+                                <span>Hello,</span> <br>
+                                <span id="element"></span>
+                            </h1>
+                        </div>
+                        <div class=''>
+                            <p>Full-Stack Developer with 5+ years of experience building scalable web products using React, TypeScript, Node.js, and PHP. I've shipped real features to 60+ live client sites — from community forums to payment-integrated onboarding flows. <br></p>
+                        </div>
+                        <div class='cv-download'>
+                            <a href="curriculum/CV - Estefania Henriquez - Compacto (english).pdf" download>Download CV - English</a>
+                            <a href="curriculum/CV - Estefania Henriquez  - Compacto (spanish).pdf" download>Download CV - Español</a>
+                        </div>
+                        <div class='btn-1'>
+                            <a target=”_blank” href="#contactsection">View My Work</a>
+                        </div>
+                    </div>
+                    <div class='textabout1'>
+                        <div class='bx1-1'>
+                            <h4>ABOUT ME</h4>
+                            <p>I started coding at 17 and never stopped. Over 5+ years I've gone from styling pages with CSS to architecting full-stack systems used by real enterprise clients. I care deeply about clean code and products that actually solve problems. When I'm not building, you'll find me on the football field or training for a marathon.</p>
+                            <a target=”_blank” href="#aboutsection">READ MORE<i class="fa fa-arrow-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class='line1-1'></div>
+                        <div class='bx1-1'>
+                            <h4>MY WORK</h4>
+                            <p>I build full-stack web products end-to-end — from architecture and database design to frontend implementation and deployment. My recent work includes a community forum, an embeddable calendar system, and a multi-step onboarding form with Stripe integration.</p>
+                            <a target=”_blank” href="#projectsection">BROWSE PROJECTS<i class="fa fa-arrow-right"
+                                    aria-hidden="true"></i></a> 
+                        </div>
+                        <div class='line1-1'></div>
+                        <div class='socialmedia'>
+                            <h4>FOLLOW ME</h4>
+                            <div class='socialbox'>
+                                <a target=”_blank” href="https://www.instagram.com/estefa.ha/"><i class="fa fa-instagram"
+                                        aria-hidden="true"></i></a>
+                    
+                                <a target=”_blank” href="https://www.linkedin.com/in/estefania-henriquez-758345202/"><i
+                                        class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a target=”_blank” href="https://github.com/Estefahdev"><i class="fa fa-github"
+                                        aria-hidden="true"></i></a>
+                                <!-- <a target=”_blank” href="https://wa.me/message/2MHPKF7IGFKKJ1"><i class="fa fa-whatsapp"
+                                        aria-hidden="true"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="noback1" src="images/menoback.png" alt="">
+            <img class="mobile1" src="images/menobackmobile.png" alt="">
+        </div>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ["I'm Estefania, a <br> Full-Stack Developer."],
+                typeSpeed: 50,
+            });
+        </script>
+        <div class='background4' id="aboutsection">
+            <div class='container'>
+                <div class='bgbox4'>
+                    <div class='txt4'>
+                        <div class="line4"></div>
+                        <h2>About Me</h2>
+                        <p>I'm Estefanía, a Full-Stack Developer based in San José, Costa Rica. Over the past 5+ years I've gone from styling pages with CSS to architecting full-stack products used by real clients — including a community forum, an interactive calendar, and a Stripe-integrated onboarding system deployed across 60+ live sites. I write clean, maintainable code and I'm equally comfortable on the frontend and the backend. When I'm not coding, you'll find me training for a marathon or on the football field. ⚽🏃‍♀️</p>
+                        <div class='stacktec4'>
+                            <span>Tech Stack |</span>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-js"></i>
+                            <!-- <i class="fa-brands fa-typescript"></i> -->
+                            <img src="/images/typescript.webp" alt="TypeScript" style="width: 30px; height: 30px;">
+                            <i class="fa-brands fa-react"></i>  
+                            <i class="fa-brands fa-node-js"></i>
+                            <i class="fa-brands fa-python"></i>
+                            <img src="/images/mysql.png" alt="MySQL" style="width: 30px; height: 30px;">
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-php"></i>
+                        </div>
+                    </div>
+                    <!-- <div class='img4'>
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <?php 
+        $proyects = [
+            [
+                'titulo' => 'Community Forum Module',
+                'descripcion' => 'A full-stack discussion platform built for a B2B directory product, featuring nested comments, likes/dislikes, rich-text editing, moderation tools, and user engagement notifications.',
+                'tecnologias' => ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
+                'enlace' => '',
+                'imagen' => '/images/forum-module.jpg'
+            ],
+            [
+                'titulo' => 'Interactive Calendar System',
+                'descripcion' => 'An embeddable calendar application built for a B2B directory platform, featuring event management, API key authentication, and secure synchronization across multiple client sites.',
+                'tecnologias' => ['React', 'Supabase', 'JavaScript'],
+                'enlace' => '',
+                'imagen' => '/images/calendar.jpg'
+            ],
+            [
+                'titulo' => 'Rae Mackenzie Group — Website Implementation',
+                'descripcion' => 'Implemented the full website design for Rae Mackenzie Group, a multicultural marketing and communications firm serving Fortune 500 companies. Built a responsive, professional web presence reflecting their enterprise brand.',
+                'tecnologias' => ['HTML', 'CSS', 'JavaScript', 'php'],
+                'enlace' => 'https://www.raemackenziegroup.com/',
+                'imagen' => '/images/rae-mackenzie.jpg'
+            ],
+            [
+                'titulo' => 'People of Color Career Fair — Website Implementation',
+                'descripcion' => "Implemented the full website for People of Color Career Fair, Minnesota's premier diversity career event connecting 1,000+ professionals with 50+ employer partners annually. Built a responsive, high-performance platform handling event registration, sponsor showcasing, and community engagement for one of the region's most recognized professional networking events.",
+                'tecnologias' => ['HTML', 'CSS', 'JavaScript', 'php'],
+                'enlace' => 'https://www.peopleofcolorcareerfair.com/',
+                'imagen' => '/images/people-color-career.jpg'
+            ],
+        ];
+        ?>
+        <div class='background3' id="projectsection">
+            <div class='container'>
+                <div class='title3'>
+                    <div class="line3"></div>
+                    <h2>Featured Work</h2>
+                    <p>A selection of technical explorations and client projects, showcasing architecture, performance, and interaction design.</p>
+                </div>
+                <div class='bx3'>
+                    <?php 
+                    foreach ($proyects as $proyecto) { ?>
+                        <div class="wit6"> 
+                            <img src="<?php echo $proyecto['imagen']; ?>" alt="">
+                            <div class="txt6">
+                                <div class='tags-technologies'>
+                                    <?php foreach ($proyecto['tecnologias'] as $tecnologia) { ?>
+                                        <span class="tag"><?php echo $tecnologia; ?></span>
+                                    <?php } ?>
+                                </div>
+                                <h2><?php echo $proyecto['titulo']; ?></h2>
+                                <div class='description'>
+                                    <p class="project-desc" data-fulltext="<?php echo $proyecto['descripcion']; ?>"><span class="desc-text"></span> <a href="javascript:void(0);" class="read-more-link">Read More</a></p>
+                                </div>
+                                <div class='boxx6'>
+                                    <?php 
+                                    if (!empty($proyecto['enlace'])) { ?>
+                                        <div class='btn6'>
+                                            <a href="<?php echo $proyecto['enlace']; ?>" target="_blank">
+                                                Live Site <i class="fa fa-external-link" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    <?php } else { ?>
+                                        <div class='btn6'>
+                                            Private Project
+                                        </div>
+                                    <?php } ?>
+                                </div>
+                            </div>
+                        </div>
+                    <?php
+                    } ?>
+                </div>
+            </div>
+        </div>
+        <div class='background2' id="contactsection">
+            <div class='container'>
+                <div class='title2'>
+                    <div class='line2'></div>
+                    <h2>Let's Work Together</h2>
+                </div>
+                <div class='bgbox2 nocenter2'>
+                    <div class='box2'>
+                        <div class='txt2'>
+                            <h3>Get in touch with me</h3>
+                            <p>Whether you're a recruiter, a hiring manager, or just want to connect — feel free to reach out or book a quick call directly. I'm always open to interesting conversations.</p>
+                        </div>
+                        <div class='socialmedia2'>
+                            <a target=”_blank” href="https://www.instagram.com/estefa.ha/"><i class="fa fa-instagram"
+                                    aria-hidden="true"></i></a>
+                            <a target=”_blank” href="https://www.linkedin.com/in/estefania-henriquez-758345202/"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a target=”_blank” href="https://github.com/Estefahdev"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
+                            <!-- <a target=”_blank” href="https://wa.me/message/2MHPKF7IGFKKJ1"><i class="fa fa-whatsapp"
+                                    aria-hidden="true"></i></a> -->
+                        </div>
+                    </div>
+                    <div class='meetingbox'>
+                       <!-- Start of Meetings Embed Script -->
+                            <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/estefaniahfreelance1?embed=true"></div>
+                            <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+                        <!-- End of Meetings Embed Script -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const READ_MORE_CHAR_LIMIT = 120;
+
+            document.querySelectorAll('.project-desc').forEach((desc) => {
+                const fullText = desc.dataset.fulltext;
+                const textSpan = desc.querySelector('.desc-text');
+                const link = desc.querySelector('.read-more-link');
+                if (!textSpan || !link) return;
+
+                const truncatedText = fullText.slice(0, READ_MORE_CHAR_LIMIT) + '...';
+                let expanded = false;
+
+                if (fullText.length <= READ_MORE_CHAR_LIMIT) {
+                    textSpan.textContent = fullText;
+                    link.style.display = 'none';
+                    return;
+                }
+
+                textSpan.textContent = truncatedText;
+
+                link.addEventListener('click', () => {
+                    expanded = !expanded;
+                    textSpan.textContent = expanded ? fullText : truncatedText;
+                    link.textContent = expanded ? 'Read Less' : 'Read More';
+                });
+            });
+        </script>
+    </body>
+    <footer>
+        <div class='backgroundfooter'>
+            <div class='container'>
+                <div class='bgfooter'>
+                    <div class='iconfooter'>
+                        <img src="images/Logo_Freelance.png" alt="Estefania Freelance Logo">
+                    </div>
+                    <div class='directionfooter'>
+                        <p>Canton Central, San José Costa Rica</p>
+                    </div>
+                    <div class='socialmediafooter'>
+                        <a target=”_blank” href="https://www.instagram.com/estefa.ha/"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                    
+                        <a target=”_blank” href="https://www.linkedin.com/in/estefania-henriquez-758345202/"><i
+                                class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <!-- <a target=”_blank” href="https://wa.me/message/2MHPKF7IGFKKJ1"><i class="fa fa-whatsapp"
+                                aria-hidden="true"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>
